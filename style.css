@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(#111,#222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::after{
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background: red;
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(35% at right 70%);
+}
+body .container{
+    background-color: rgb(255,255,255,0.1);
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+body nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+}
+body nav ul li{
+    display: inline-block;
+    margin: 0 6px;
+}
+body nav .logo{
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+body nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+body nav ul a:hover{
+    color: red;
+}
+body .container .contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+body .container .contain .text{
+    color: #fff;
+    width: 40%;
+}
+body .container .contain .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+body .container .contain .text p{
+    color: antiquewhite;
+    line-height: 25px;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+body .container .contain .imgs{
+    width: 40%; 
+}
+body .container .contain .imgs img{
+    width: 400px;
+}
